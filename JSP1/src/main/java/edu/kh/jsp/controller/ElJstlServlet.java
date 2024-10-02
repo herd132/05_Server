@@ -9,17 +9,17 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/el_jstl")
+@WebServlet("/signup_result")
 public class ElJstlServlet extends HttpServlet {
 
 	// GET방식 요청 시
 	// 지정된 JSP로 바로 요청 위임
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		
 		// 1) JSP 경로 (webapp 폴더 기준)
-		String path = "/WEB-INF/views/el_jstl.jsp";
+		String path = "/WEB-INF/views/signup_result.jsp";
 		
 		
 		// 2) 요청 발송자 얻어오기

@@ -83,7 +83,7 @@
 	</pre>
 	
 	<h3>JSTL c:if문 사용해보기</h3>
-	
+
 	<%
 		int age = Integer.parseInt(request.getParameter("age"));
 		if(age > 20) {
@@ -92,6 +92,7 @@
 		<h3>성인입니다(JSP 스크립틀릿으로 출력)</h3>
 		
 	<% } %>	
+
 	
 	
 	<c:if test="${param.age > 20}">
