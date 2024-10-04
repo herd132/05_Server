@@ -1,0 +1,13 @@
+클 ->  Controller     ->    Service      -> DAO -> 
+					DB/파일
+클 <-   view   <- Controller <- Service  <- DAO
+
+로그인(요청) - 아이디/비밀번호
+Controller   : 알맞은 요청처리 매핑 
+Service   :   비밀번호 암호화에 관련된 로직처리(데이터 가공처리)
+DAO   :  가공처리된 데이터를 DB에 전달 
+DB : 조회 -> 결과
+DAO : 결과 반환
+Service : 결과 반환
+Controller : 결과 반환 --> 가입이 된 사람이다    ->  view(메인페이지로)       -> 클라이언트
+                             --> 가입이 안된 사람이다 -> view(회원가입 페이지로)  -> 클라이언트
